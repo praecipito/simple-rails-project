@@ -3,3 +3,6 @@
   <li>Description: <%= @task.description %></li>
   <li>Deadline: <%= @task.deadline %></li>
 </ul>
+<%= link_to "Edit this task", edit_task_path %>
+<%= link_to "Back to tasks", tasks_path %>
+<%= button_to "Delete this task", @task, method: :delete %>
